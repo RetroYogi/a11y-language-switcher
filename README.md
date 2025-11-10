@@ -1,8 +1,8 @@
 # A11y Language Switcher
 
 ![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)
-![WordPress](https://img.shields.io/badge/WordPress-5.0+-green.svg)
-![PHP](https://img.shields.io/badge/PHP-7.0+-purple.svg)
+![WordPress](https://img.shields.io/badge/WordPress-6.0+-green.svg)
+![PHP](https://img.shields.io/badge/PHP-8.0+-purple.svg)
 ![License](https://img.shields.io/badge/license-GPL--2.0-orange.svg)
 
 Modern, accessible language switcher for WordPress sites using the Polylang plugin. Provides a WCAG 2.1 AA compliant language switcher that works seamlessly with block-based themes and Full Site Editing.
@@ -28,8 +28,8 @@ This plugin uses Polylang's translation database to ensure correct URLs.
 
 ## Requirements
 
-- WordPress 5.0+
-- PHP 7.0+
+- WordPress 6.0+
+- PHP 8.0+
 - [Polylang](https://wordpress.org/plugins/polylang/) plugin (free or pro)
 
 ## Installation

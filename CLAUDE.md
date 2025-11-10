@@ -6,9 +6,7 @@ Technical documentation for developers and AI assistants working with the A11y L
 
 A11y Language Switcher is a WordPress plugin that provides an accessible language switcher for Polylang users.
 
-**Current Version:** 1.0.1
-**WordPress:** 5.0+ required
-**PHP:** 7.0+ required
+**Version Requirements:** See plugin headers in `a11y-language-switcher.php` for current version and minimum requirements
 **Dependencies:** Polylang (free or pro)
 
 ## Plugin Structure
@@ -286,8 +284,7 @@ Main JavaScript file: `assets/js/language-switcher.js`
 - JavaScript validation: Check console for validation messages
 
 ### Compatibility
-- WordPress 5.0+
-- PHP 7.0+
+- WordPress and PHP: See `a11y-language-switcher.php` for minimum required versions
 - Polylang free and pro
 - Modern browsers (Chrome, Firefox, Safari, Edge)
 - Mobile devices (iOS Safari, Chrome Android)
@@ -304,10 +301,36 @@ JavaScript: ES5+ (no transpilation required)
 
 ## Documentation Files
 
-- **README.md** - Project overview and quick start
+### Current Documentation
+
+- **README.md** - Project overview and quick start (GitHub display)
+- **readme.txt** - WordPress.org plugin directory format (required for plugin submission)
 - **USAGE.md** - Complete usage documentation
 - **CHANGELOG.md** - Version history and security updates
-- **CLAUDE.md** - This developer guide
+- **CLAUDE.md** - This developer guide (AI assistant instructions)
+
+### Documentation Guidelines
+
+**IMPORTANT for AI Assistants:**
+
+1. **Do NOT delete documentation files** - All existing documentation files must be preserved
+2. **Do NOT create new documentation files** - Never proactively create new `.md` files without explicit user permission
+3. **Updates are allowed** - Existing documentation files can and should be updated when needed
+4. **Ask first** - If you think a new documentation file is needed, ask the user for permission first
+
+**Rationale:**
+- Documentation files serve specific purposes and audiences
+- Each file has a defined role in the project ecosystem
+- New documentation adds maintenance overhead
+- User should decide if new documentation is needed
+
+**Examples:**
+- ✅ **Allowed:** Update README.md to reflect new features
+- ✅ **Allowed:** Add security info to CHANGELOG.md
+- ✅ **Allowed:** Update version requirements in existing files
+- ❌ **Not Allowed:** Create CONTRIBUTING.md without asking
+- ❌ **Not Allowed:** Create docs/ folder without permission
+- ❌ **Not Allowed:** Delete USAGE.md because it seems redundant
 
 ## Version History
 
