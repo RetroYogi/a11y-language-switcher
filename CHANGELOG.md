@@ -86,8 +86,6 @@ Initial release of A11y Language Switcher
 - Clean, modern CSS with smooth transitions
 - Polylang dependency check (auto-deactivates if Polylang missing)
 - Support for Polylang free and pro versions
-- WordPress 5.0+ compatible
-- PHP 7.0+ required
 
 **Browser Support:**
 - Chrome/Edge (latest)

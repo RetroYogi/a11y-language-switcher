@@ -6,9 +6,7 @@ Technical documentation for developers and AI assistants working with the A11y L
 
 A11y Language Switcher is a WordPress plugin that provides an accessible language switcher for Polylang users.
 
-**Current Version:** 1.0.1
-**WordPress:** 5.0+ required
-**PHP:** 7.0+ required
+**Version Requirements:** See plugin headers in `a11y-language-switcher.php` for current version and minimum requirements
 **Dependencies:** Polylang (free or pro)
 
 ## Plugin Structure
@@ -286,8 +284,7 @@ Main JavaScript file: `assets/js/language-switcher.js`
 - JavaScript validation: Check console for validation messages
 
 ### Compatibility
-- WordPress 5.0+
-- PHP 7.0+
+- WordPress and PHP: See `a11y-language-switcher.php` for minimum required versions
 - Polylang free and pro
 - Modern browsers (Chrome, Firefox, Safari, Edge)
 - Mobile devices (iOS Safari, Chrome Android)

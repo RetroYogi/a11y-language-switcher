@@ -10,8 +10,8 @@
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: accessible-a11ylang-switcher
  * Domain Path: /languages
- * Requires at least: 5.0
- * Requires PHP: 7.0
+ * Requires at least: 6.0
+ * Requires PHP: 8.0
  * Requires Plugins: polylang
  */
 

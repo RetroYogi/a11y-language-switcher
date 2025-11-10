@@ -1,9 +1,9 @@
 === A11y Language Switcher by Key4 ===
 Contributors: Gérard Kieffer
 Tags: polylang, language, switcher, accessibility, wcag, multilingual, a11y, block-theme
-Requires at least: 5.0
-Tested up to: 6.4
-Requires PHP: 7.0
+Requires at least: 6.0
+Tested up to: 6.8
+Requires PHP: 8.0
 Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -94,9 +94,9 @@ The plugin automatically:
 
 = Requirements =
 
-* WordPress 5.0 or higher
+* WordPress 6.0 or higher
 * Polylang plugin (free or pro version) - **required**
-* PHP 7.0 or higher
+* PHP 8.0 or higher
 * Block theme recommended (works with classic themes too)
 
 = Not Included =
