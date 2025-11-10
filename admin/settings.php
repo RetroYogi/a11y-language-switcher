@@ -277,7 +277,6 @@ class APLS_Admin_Settings {
 
                 <h4 style="margin-top: 20px;"><?php _e('Screen Reader Accessibility', 'accessible-a11ylang-switcher'); ?></h4>
                 <p style="color: #0a6e2f; background: #e8f5e9; padding: 10px; border-left: 3px solid #0a6e2f;">
-                    <strong>✓ <?php _e('Verified:', 'accessible-a11ylang-switcher'); ?></strong>
                     <?php _e('Screen readers always announce the full language name (e.g., "Français", "English", "Deutsch"), even when the visual display shows only flags or language codes. This is achieved using visually-hidden text that is accessible to assistive technologies.', 'accessible-a11ylang-switcher'); ?>
                 </p>
             </div>
