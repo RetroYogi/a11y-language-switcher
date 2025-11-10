@@ -238,6 +238,67 @@ class APLS_Admin_Settings {
      */
     public function flags_section_callback() {
         echo '<p>' . __('Customize flag emojis for each language. You can use flag emojis (🇫🇷, 🇬🇧, 🇩🇪) or text (FR, EN, DE).', 'accessible-a11ylang-switcher') . '</p>';
+        ?>
+        <div style="margin-top: 15px; background: #f8f9fa; border: 1px solid #ddd; border-radius: 4px;">
+            <button type="button"
+                    onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'); document.getElementById('apls-customization-guide').style.display = this.getAttribute('aria-expanded') === 'true' ? 'block' : 'none';"
+                    aria-expanded="false"
+                    aria-controls="apls-customization-guide"
+                    style="width: 100%; text-align: left; padding: 12px 15px; background: transparent; border: none; cursor: pointer; font-weight: 600; color: #2271b1;">
+                <span style="display: inline-block; margin-right: 8px; transition: transform 0.2s;">▶</span>
+                <?php _e('How to customize the language list', 'accessible-a11ylang-switcher'); ?>
+            </button>
+            <div id="apls-customization-guide" style="display: none; padding: 0 15px 15px 15px; border-top: 1px solid #ddd; margin-top: 0;">
+                <h4 style="margin-top: 15px;"><?php _e('Customizing Language Flags', 'accessible-a11ylang-switcher'); ?></h4>
+                <p><?php _e('The language list above is automatically generated based on the languages you\'ve configured in Polylang. To customize the flags:', 'accessible-a11ylang-switcher'); ?></p>
+                <ol style="margin-left: 20px;">
+                    <li><?php _e('Use the fields above to change the flag emoji or text for each language', 'accessible-a11ylang-switcher'); ?></li>
+                    <li><?php _e('Click "Save Settings" to apply your changes', 'accessible-a11ylang-switcher'); ?></li>
+                </ol>
+
+                <h4 style="margin-top: 20px;"><?php _e('Adding or Removing Languages', 'accessible-a11ylang-switcher'); ?></h4>
+                <p><?php _e('To add or remove languages from the switcher, you need to configure them in Polylang:', 'accessible-a11ylang-switcher'); ?></p>
+                <ol style="margin-left: 20px;">
+                    <li><?php _e('Go to <strong>Languages</strong> in your WordPress admin menu', 'accessible-a11ylang-switcher'); ?></li>
+                    <li><?php _e('Add or remove languages as needed in Polylang', 'accessible-a11ylang-switcher'); ?></li>
+                    <li><?php _e('Return to this settings page - new languages will appear automatically', 'accessible-a11ylang-switcher'); ?></li>
+                </ol>
+
+                <h4 style="margin-top: 20px;"><?php _e('Default Flag Emojis', 'accessible-a11ylang-switcher'); ?></h4>
+                <p><?php _e('The plugin provides default flag emojis for 34 languages (including the 20 most commonly used languages worldwide, plus Luxembourgish and other European languages). These defaults are defined in the file:', 'accessible-a11ylang-switcher'); ?></p>
+                <p><code style="background: #fff; padding: 4px 8px; border: 1px solid #ddd; border-radius: 3px;">admin/settings.php</code> <?php _e('(see the <code>get_default_flag()</code> function)', 'accessible-a11ylang-switcher'); ?></p>
+                <p><?php _e('To change the default flags used for new languages:', 'accessible-a11ylang-switcher'); ?></p>
+                <ol style="margin-left: 20px;">
+                    <li><?php _e('Edit the <code>admin/settings.php</code> file', 'accessible-a11ylang-switcher'); ?></li>
+                    <li><?php _e('Find the <code>get_default_flag()</code> method (around line 330)', 'accessible-a11ylang-switcher'); ?></li>
+                    <li><?php _e('Add or modify the language codes and their corresponding flag emojis in the <code>$defaults</code> array', 'accessible-a11ylang-switcher'); ?></li>
+                    <li><?php _e('Save the file', 'accessible-a11ylang-switcher'); ?></li>
+                </ol>
+
+                <h4 style="margin-top: 20px;"><?php _e('Screen Reader Accessibility', 'accessible-a11ylang-switcher'); ?></h4>
+                <p style="color: #0a6e2f; background: #e8f5e9; padding: 10px; border-left: 3px solid #0a6e2f;">
+                    <strong>✓ <?php _e('Verified:', 'accessible-a11ylang-switcher'); ?></strong>
+                    <?php _e('Screen readers always announce the full language name (e.g., "Français", "English", "Deutsch"), even when the visual display shows only flags or language codes. This is achieved using visually-hidden text that is accessible to assistive technologies.', 'accessible-a11ylang-switcher'); ?>
+                </p>
+            </div>
+        </div>
+        <script>
+        // Add rotation animation to arrow when expanded
+        document.addEventListener('DOMContentLoaded', function() {
+            var btn = document.querySelector('[aria-controls="apls-customization-guide"]');
+            if (btn) {
+                btn.addEventListener('click', function() {
+                    var arrow = this.querySelector('span');
+                    if (this.getAttribute('aria-expanded') === 'true') {
+                        arrow.style.transform = 'rotate(90deg)';
+                    } else {
+                        arrow.style.transform = 'rotate(0deg)';
+                    }
+                });
+            }
+        });
+        </script>
+        <?php
     }
 
     /**
@@ -312,16 +373,49 @@ class APLS_Admin_Settings {
 
     /**
      * Get default flag for language
+     * Includes 20 most commonly used languages + Luxembourgish
      */
     private function get_default_flag($lang) {
         $defaults = array(
-            'fr' => '🇫🇷',
-            'en' => '🇬🇧',
-            'de' => '🇩🇪',
-            'es' => '🇪🇸',
-            'pt' => '🇵🇹',
-            'it' => '🇮🇹',
-            'nl' => '🇳🇱',
+            // Most commonly used languages (by number of speakers)
+            'en' => '🇬🇧',  // English
+            'zh' => '🇨🇳',  // Chinese (Mandarin)
+            'hi' => '🇮🇳',  // Hindi
+            'es' => '🇪🇸',  // Spanish
+            'fr' => '🇫🇷',  // French
+            'ar' => '🇸🇦',  // Arabic
+            'bn' => '🇧🇩',  // Bengali
+            'pt' => '🇵🇹',  // Portuguese
+            'ru' => '🇷🇺',  // Russian
+            'ur' => '🇵🇰',  // Urdu
+            'id' => '🇮🇩',  // Indonesian
+            'de' => '🇩🇪',  // German
+            'ja' => '🇯🇵',  // Japanese
+            'sw' => '🇰🇪',  // Swahili
+            'mr' => '🇮🇳',  // Marathi
+            'te' => '🇮🇳',  // Telugu
+            'tr' => '🇹🇷',  // Turkish
+            'ta' => '🇮🇳',  // Tamil
+            'vi' => '🇻🇳',  // Vietnamese
+            'ko' => '🇰🇷',  // Korean
+
+            // Additional commonly used languages
+            'it' => '🇮🇹',  // Italian
+            'nl' => '🇳🇱',  // Dutch
+            'pl' => '🇵🇱',  // Polish
+            'uk' => '🇺🇦',  // Ukrainian
+            'th' => '🇹🇭',  // Thai
+            'sv' => '🇸🇪',  // Swedish
+            'no' => '🇳🇴',  // Norwegian
+            'da' => '🇩🇰',  // Danish
+            'fi' => '🇫🇮',  // Finnish
+            'el' => '🇬🇷',  // Greek
+            'cs' => '🇨🇿',  // Czech
+            'ro' => '🇷🇴',  // Romanian
+            'hu' => '🇭🇺',  // Hungarian
+
+            // Luxembourgish (special request)
+            'lb' => '🇱🇺',  // Luxembourgish
         );
         return isset($defaults[$lang]) ? $defaults[$lang] : '🌐';
     }
