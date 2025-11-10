@@ -62,7 +62,7 @@ Built from the ground up following WCAG 2.1 AA standards with full keyboard navi
 **Smart URL Handling:**
 * Uses Polylang's actual translation URLs
 * Handles translated page slugs correctly
-* Example: `/services/` (FR) → `/en/digital-services/` (EN) ✓
+* Example: `/services/` (FR) → `/de/dienstleistungen/` (DE) ✓
 * No URL guessing - always accurate
 
 **Customization:**

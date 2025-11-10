@@ -218,8 +218,8 @@ class APLS_Admin_Settings {
                 <p><?php _e('This plugin uses Polylang\'s translation URLs directly, so it correctly handles translated page slugs:', 'accessible-a11ylang-switcher'); ?></p>
                 <ul>
                     <li><?php _e('French:', 'accessible-a11ylang-switcher'); ?> <code>/services/</code></li>
-                    <li><?php _e('English:', 'accessible-a11ylang-switcher'); ?> <code>/en/digital-services/</code></li>
                     <li><?php _e('German:', 'accessible-a11ylang-switcher'); ?> <code>/de/dienstleistungen/</code></li>
+                    <li><?php _e('Spanish:', 'accessible-a11ylang-switcher'); ?> <code>/es/servicios/</code></li>
                 </ul>
             </div>
         </div>
