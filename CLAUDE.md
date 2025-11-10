@@ -291,12 +291,7 @@ Main JavaScript file: `assets/js/language-switcher.js`
 
 ## Browser Compatibility
 
-Target: Modern browsers (last 2 versions)
-- Chrome/Edge (Chromium-based)
-- Firefox
-- Safari (desktop and iOS)
-- Chrome Android
-
+Target: Modern browsers (released last 2 years)
 JavaScript: ES5+ (no transpilation required)
 
 ## Documentation Files

@@ -5,7 +5,7 @@ All notable changes to A11y Language Switcher will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.1] - 2024-10-31
+## [1.0.1] - 2025-11-01
 
 ### Security
 
@@ -57,7 +57,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [1.0.0] - 2024-11-01
+## [1.0.0] - 2025-10-31
 
 ### Added
 
@@ -86,6 +86,8 @@ Initial release of A11y Language Switcher
 - Clean, modern CSS with smooth transitions
 - Polylang dependency check (auto-deactivates if Polylang missing)
 - Support for Polylang free and pro versions
+- WordPress 6.0+ compatible
+- PHP 8.0+ required
 
 **Browser Support:**
 - Chrome/Edge (latest)
@@ -98,8 +100,8 @@ Initial release of A11y Language Switcher
 
 ## Version History
 
-- **1.0.1** (2024-10-31) - Security update: XSS fixes, CSRF protection, rate limiting
-- **1.0.0** (2024-11-01) - Initial release
+- **1.0.1** (2025-11-01) - Security update: XSS fixes, CSRF protection, rate limiting
+- **1.0.0** (2025-10-31) - Initial release
 
 ---
 
