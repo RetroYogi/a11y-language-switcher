@@ -5,6 +5,38 @@ All notable changes to A11y Language Switcher will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2025-11-10
+
+### Added
+
+- **Expandable customization guide** in settings page (Settings → Language Switcher)
+  - Instructions for customizing language flags
+  - Instructions for adding/removing languages via Polylang
+  - Documentation of where default flags are defined (`admin/settings.php`)
+  - Verification that screen readers announce full language names regardless of display mode
+  - Accessible collapsible section with proper ARIA attributes
+
+- **Expanded language support** from 7 to 34 languages
+  - Added 20 most commonly spoken languages worldwide (English, Chinese, Hindi, Spanish, French, Arabic, Bengali, Portuguese, Russian, Urdu, Indonesian, German, Japanese, Swahili, Marathi, Telugu, Turkish, Tamil, Vietnamese, Korean)
+  - Added Luxembourgish (lb → 🇱🇺)
+  - Added additional European languages (Italian, Dutch, Polish, Ukrainian, Thai, Swedish, Norwegian, Danish, Finnish, Greek, Czech, Romanian, Hungarian)
+
+### Changed
+
+- Updated `get_default_flag()` method in `admin/settings.php` with comprehensive language list
+- Improved settings page documentation with detailed help text
+
+### Documentation
+
+- Verified all 5 accessibility features are properly implemented:
+  - ✅ Full keyboard navigation (Tab, Arrow keys, Enter, Escape, Home, End)
+  - ✅ ARIA labels and roles for screen readers
+  - ✅ High contrast mode support
+  - ✅ Reduced motion support
+  - ✅ WCAG 2.1 AA compliance
+
+---
+
 ## [1.0.1] - 2025-11-01
 
 ### Security
@@ -100,6 +132,7 @@ Initial release of A11y Language Switcher
 
 ## Version History
 
+- **1.1.0** (2025-11-10) - Feature update: Customization guide, expanded language support (34 languages)
 - **1.0.1** (2025-11-01) - Security update: XSS fixes, CSRF protection, rate limiting
 - **1.0.0** (2025-10-31) - Initial release
 

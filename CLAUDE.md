@@ -47,6 +47,11 @@ a11y-language-switcher/
 - Settings page at Settings → Language Switcher
 - Debug mode toggle
 - Custom flag emoji configuration
+- Expandable customization guide (v1.1.0+) explaining:
+  - How to customize language flags
+  - How to add/remove languages via Polylang
+  - Where default flags are defined
+  - Screen reader accessibility verification
 - CSRF protection with nonces
 - Rate limiting (10-second cooldown)
 
@@ -123,8 +128,10 @@ Enable at Settings → Language Switcher:
 ### Language Flags
 
 Customize at Settings → Language Switcher:
-- Default flags: 🇫🇷 🇬🇧 🇩🇪 🇪🇸 🇵🇹 🇮🇹 🇳🇱
-- Can use text instead: FR, EN, DE
+- Default flags: 34 languages supported (v1.1.0+), including 20 most commonly spoken languages worldwide plus Luxembourgish
+- Examples: 🇫🇷 🇬🇧 🇩🇪 🇪🇸 🇵🇹 🇮🇹 🇳🇱 🇨🇳 🇮🇳 🇸🇦 🇧🇩 🇷🇺 🇵🇰 🇮🇩 🇯🇵 🇰🇪 🇹🇷 🇻🇳 🇰🇷 🇵🇱 🇺🇦 🇹🇭 🇸🇪 🇳🇴 🇩🇰 🇫🇮 🇬🇷 🇨🇿 🇷🇴 🇭🇺 🇱🇺
+- Can use text instead: FR, EN, DE, etc.
+- Full list defined in `admin/settings.php` → `get_default_flag()` method
 
 ### Element IDs
 
@@ -329,7 +336,8 @@ JavaScript: ES5+ (no transpilation required)
 
 ## Version History
 
-- **1.0.1** (2024-10-31) - Security update: XSS fixes, CSRF protection, rate limiting
-- **1.0.0** (2024-11-01) - Initial release
+- **1.1.0** (2025-11-10) - Feature update: Customization guide, expanded language support (34 languages)
+- **1.0.1** (2025-11-01) - Security update: XSS fixes, CSRF protection, rate limiting
+- **1.0.0** (2025-10-31) - Initial release
 
 See CHANGELOG.md for detailed version history.

@@ -3,7 +3,7 @@
  * Plugin Name: A11y Language Switcher by Key4
  * Plugin URI: https://key4.lu
  * Description: Block-based language switcher for Polylang users with block themes. Fully accessible (WCAG 2.1 AA) with keyboard navigation. Perfect complement to Polylang Free when you need a modern language switcher.
- * Version: 1.0.1
+ * Version: 1.1.0
  * Author: Gérard Kieffer
  * Author URI: https://key4.lu
  * License: GPL v2 or later
@@ -21,7 +21,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('APLS_VERSION', '1.0.1');
+define('APLS_VERSION', '1.1.0');
 define('APLS_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('APLS_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('APLS_PLUGIN_BASENAME', plugin_basename(__FILE__));
