@@ -250,7 +250,7 @@ class APLS_Admin_Settings {
             </button>
             <div id="apls-customization-guide" style="display: none; padding: 0 15px 15px 15px; border-top: 1px solid #ddd; margin-top: 0;">
                 <h4 style="margin-top: 15px;"><?php _e('Customizing Language Flags', 'accessible-a11ylang-switcher'); ?></h4>
-                <p><?php _e('The language list above is automatically generated based on the languages you\'ve configured in Polylang. To customize the flags:', 'accessible-a11ylang-switcher'); ?></p>
+                <p><?php _e('The language list below is automatically generated based on the languages you\'ve configured in Polylang. To customize the flags:', 'accessible-a11ylang-switcher'); ?></p>
                 <ol style="margin-left: 20px;">
                     <li><?php _e('Use the fields above to change the flag emoji or text for each language', 'accessible-a11ylang-switcher'); ?></li>
                     <li><?php _e('Click "Save Settings" to apply your changes', 'accessible-a11ylang-switcher'); ?></li>
@@ -262,17 +262,6 @@ class APLS_Admin_Settings {
                     <li><?php _e('Go to <strong>Languages</strong> in your WordPress admin menu', 'accessible-a11ylang-switcher'); ?></li>
                     <li><?php _e('Add or remove languages as needed in Polylang', 'accessible-a11ylang-switcher'); ?></li>
                     <li><?php _e('Return to this settings page - new languages will appear automatically', 'accessible-a11ylang-switcher'); ?></li>
-                </ol>
-
-                <h4 style="margin-top: 20px;"><?php _e('Default Flag Emojis', 'accessible-a11ylang-switcher'); ?></h4>
-                <p><?php _e('The plugin provides default flag emojis for 34 languages (including the 20 most commonly used languages worldwide, plus Luxembourgish and other European languages). These defaults are defined in the file:', 'accessible-a11ylang-switcher'); ?></p>
-                <p><code style="background: #fff; padding: 4px 8px; border: 1px solid #ddd; border-radius: 3px;">admin/settings.php</code> <?php _e('(see the <code>get_default_flag()</code> function)', 'accessible-a11ylang-switcher'); ?></p>
-                <p><?php _e('To change the default flags used for new languages:', 'accessible-a11ylang-switcher'); ?></p>
-                <ol style="margin-left: 20px;">
-                    <li><?php _e('Edit the <code>admin/settings.php</code> file', 'accessible-a11ylang-switcher'); ?></li>
-                    <li><?php _e('Find the <code>get_default_flag()</code> method (around line 330)', 'accessible-a11ylang-switcher'); ?></li>
-                    <li><?php _e('Add or modify the language codes and their corresponding flag emojis in the <code>$defaults</code> array', 'accessible-a11ylang-switcher'); ?></li>
-                    <li><?php _e('Save the file', 'accessible-a11ylang-switcher'); ?></li>
                 </ol>
 
                 <h4 style="margin-top: 20px;"><?php _e('Screen Reader Accessibility', 'accessible-a11ylang-switcher'); ?></h4>
