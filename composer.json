@@ -1,0 +1,18 @@
+{
+    "name": "key4/a11y-language-switcher",
+    "description": "Accessible language switcher for Polylang with block themes",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "require-dev": {
+        "php-stubs/wordpress-stubs": "^6.7",
+        "php-stubs/polylang-stubs": "^3.6"
+    },
+    "require": {
+        "php": ">=8.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
