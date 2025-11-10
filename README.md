@@ -7,15 +7,11 @@
 
 Modern, accessible language switcher for WordPress sites using the Polylang plugin. Provides a WCAG 2.1 AA compliant language switcher that works seamlessly with block-based themes and Full Site Editing.
 
-## The Problem
+## About This Plugin
 
-Polylang Free only provides language switchers for legacy navigation menus and widget blocks. If you're using a modern block-based theme with Full Site Editing, you need this plugin.
+I manage several multilingual websites for which I use Polylang Pro. But for some low-traffic sites, the free verson is definitely enough, except for one issue: Polylang Free only provides language switchers for the classic menu system and as a legacy widget block. If you're using a modern block-based theme with Full Site Editing, you're out of luck. Therefore, I've developed this free, accessible language switcher that works perfectly on WordPress sites using Polylang Free.
 
-Traditional language switchers also break when page slugs are translated:
-- French: `/services/`
-- English: `/en/digital-services/` (not `/en/services/`)
-
-This plugin uses Polylang's translation database to ensure correct URLs.
+This plugin uses Polylang's translation database to ensure correct URLs, even when page slugs are translated.
 
 ## Features
 
@@ -23,7 +19,6 @@ This plugin uses Polylang's translation database to ensure correct URLs.
 - **Smart URLs**: Uses Polylang's actual translation URLs (handles translated slugs correctly)
 - **Simple**: Easy shortcode `[a11ylang_language_switcher]` or PHP function
 - **Customizable**: Override styles, customize flags, adjust appearance
-- **Secure**: XSS and CSRF protection, input validation, rate limiting
 - **Lightweight**: Vanilla JavaScript, no dependencies
 
 ## Requirements
@@ -34,10 +29,11 @@ This plugin uses Polylang's translation database to ensure correct URLs.
 
 ## Installation
 
-1. Download the latest release
-2. Go to **WordPress Admin → Plugins → Add New → Upload Plugin**
-3. Upload the ZIP file and click **Install Now**
-4. Click **Activate Plugin**
+1. Download the latest release as a ZIP file
+2. If you've downloaded individual files/folders, compress them into a ZIP file
+3. Go to **WordPress Admin → Plugins → Add New → Upload Plugin**
+4. Upload the ZIP file and click **Install Now**
+5. Click **Activate Plugin**
 
 ## Quick Start
 
