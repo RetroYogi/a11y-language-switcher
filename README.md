@@ -1,9 +1,10 @@
+The [Polylang 3.8 update](https://polylang.pro/polylang-3-8-is-now-available-whats-new/) made the block-based language switcher available in the free version. **This WordPress extension is now obsolete:**
+
+> The ****Language**** Switcher Block and the Navigation Language Switcher Block, previously exclusive to Polylang Pro, are now available for free directly in Polylang. These blocks allow you to easily insert a language selector inside pages, posts, or navigation menus.
+
 # A11y Language Switcher
 
-![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)
-![WordPress](https://img.shields.io/badge/WordPress-6.0+-green.svg)
-![PHP](https://img.shields.io/badge/PHP-8.0+-purple.svg)
-![License](https://img.shields.io/badge/license-GPL--2.0-orange.svg)
+Read the [blog post](https://key4.lu/en/blog/the-modern-and-accessible-language-switcher-missing-from-polylang/) about this extension
 
 Modern, accessible language switcher for WordPress sites using the Polylang plugin. Provides a WCAG 2.1 AA compliant language switcher that works seamlessly with block-based themes and Full Site Editing.
 
